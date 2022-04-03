@@ -40,7 +40,7 @@ describe("Employee", () => {
 
         it("should throw an error if not provided an email", () => {
             const cb = new Employee("Jane", 1);
-            const err = new Error("Expected parameter 'email' to be a non-empty string");
+            const err = new Error("Expected parameter 'email' to be an email address");
 
             expect(cb).toThrowError(err);
         });
@@ -57,25 +57,25 @@ describe("Employee", () => {
         it("should return the 'name' parameter when getName() is called", () => {
             const employee = new Employee("Jane", 1, "jane@email.com");
 
-            expect(employee.getName()).toReturn(employee.name);
+            expect(employee.getName()).toEqual(employee.name);
         });
         
         it("should return the 'id' parameter when getID() is called", () => {
             const employee = new Employee("Jane", 1, "jane@email.com");
 
-            expect(employee.getId()).toReturn(employee.id);
+            expect(employee.getId()).toEqual(employee.id);
         });
 
         it("should return the 'email' parameter when getEmail() is called", () => {
             const employee = new Employee("Jane", 1, "jane@email.com");
 
-            expect(employee.getEmail()).toReturn(employee.email);
+            expect(employee.getEmail()).toEqual(employee.email);
         });
 
         it("should return 'Employee' when getRole() is called", () => {
             const employee = new Employee("Jane", 1, "jane@email.com");
 
-            expect(employee.getRole()).toReturn("Employee");
+            expect(employee.getRole()).toEqual("Employee");
         })
     });
 });
