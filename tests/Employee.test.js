@@ -54,6 +54,18 @@ describe("Employee", () => {
             expect(cb2).toThrowError(err);
         });
 
+        it("should return the 'name' parameter when getName() is called", () => {
+            const employee = new Employee("Jane", 1, "jane@email.com");
+
+            expect(employee.getName()).toReturn(employee.name);
+        });
+        
+        it("should return the 'id' parameter when getID() is called", () => {
+            const employee = new Employee("Jane", 1, "jane@email.com");
+
+            expect(employee.getId()).toReturn(employee.id);
+        });
+
         it("should return the 'email' parameter when getEmail() is called", () => {
             const employee = new Employee("Jane", 1, "jane@email.com");
 
