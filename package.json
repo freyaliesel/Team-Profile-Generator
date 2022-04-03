@@ -4,7 +4,7 @@
   "description": "A command-line program that takes user input about a team via prompts, then dynamically generates an HTML webpage that displays details for each person.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
