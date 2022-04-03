@@ -1,0 +1,31 @@
+{
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "A command-line program that takes user input about a team via prompts, then dynamically generates an HTML webpage that displays details for each person.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freyaliesel/Team-Profile-Generator.git"
+  },
+  "keywords": [
+    "node.js",
+    "javascript",
+    "AGPLv3",
+    "bootstrap",
+    "inquirer",
+    "jest"
+  ],
+  "author": "K Glidden",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/freyaliesel/Team-Profile-Generator/issues"
+  },
+  "homepage": "https://github.com/freyaliesel/Team-Profile-Generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.2",
+    "jest": "^27.5.1"
+  }
+}

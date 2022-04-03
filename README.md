@@ -9,7 +9,6 @@ A command-line program that takes user input about a team via prompts, then dyna
 ## Table of Contents
 
 - [Installation](#installation)
-
 - [Usage](#usage)
 - [Contact](#contact)
 - [License](#license)
@@ -18,13 +17,9 @@ A command-line program that takes user input about a team via prompts, then dyna
 
 Ensure that [Node Package Manager](https://www.npmjs.com/) is installed in your IDE. Open the terminal inside the folder containing the cloned code, and enter "npm i" on the command line.
 
-   
-
 ## Usage
 
 link will be provided when complete
-
-
 
 ## Tests
 
@@ -36,7 +31,6 @@ link will be provided when completed
 
 Find more projects at [github.com/freyaliesel](https://github.com/freyaliesel)
 For questions, email [freyacodes@gmail.com](mailto:freyacodes@gmail.com)
-
 
 ## License
 
