@@ -21,37 +21,37 @@ describe("Employee", () => {
             const cb = () => new Employee(1, "jane@email.com");
             const err = new Error("Expected parameter 'name' to be a non-empty string");
 
-            expect(cb).toThrowError(err);
+            expect(cb).toThrow(err);
         });
 
         it("should throw an error if not provided an id", () => {
-            const cb = new Employee("Jane");
+            const cb = () => new Employee("Jane");
             const err = new Error("Expected parameter 'id' to be a non-negative number");
 
-            expect(cb).toThrowError(err);
+            expect(cb).toThrow(err);
         });
 
         it("should throw an error if 'id' is not a number", () => {
-            const cb = new Employee("Jane", "jane@email.com");
+            const cb = () => new Employee("Jane", "jane@email.com");
             const err = new Error("Expected parameter 'id' to be a non-negative number");
 
-            expect(cb).toThrowError(err);
+            expect(cb).toThrow(err);
         });
 
         it("should throw an error if not provided an email", () => {
-            const cb = new Employee("Jane", 1);
+            const cb = () =>  new Employee("Jane", 1);
             const err = new Error("Expected parameter 'email' to be an email address");
 
-            expect(cb).toThrowError(err);
+            expect(cb).toThrow(err);
         });
 
         it("should throw an error if email is not an email address", () => {
-            const cb = new Employee("Jane", 1, "janeatemail.com");
-            const cb2 = new Employee("Jane", 1, "jane@emailcom");
+            const cb = () => new Employee("Jane", 1, "janeatemail.com");
+            const cb2 = () => new Employee("Jane", 1, "jane@emailcom");
             const err = new Error("Expected parameter 'email' to be an email address");
 
-            expect(cb).toThrowError(err);
-            expect(cb2).toThrowError(err);
+            expect(cb).toThrow(err);
+            expect(cb2).toThrow(err);
         });
 
         it("should return the 'name' parameter when getName() is called", () => {
