@@ -2,6 +2,10 @@ const Engineer = require("../lib/Engineer.js");
 
 describe("Engineer", () => {
     describe("Initialization", () => {
+        it("should create a new 'Engineer' object", () => {
+            const engineer = new Engineer("Jane", 1, "jane@email.com", "janecodes");
+            expect(engineer instanceof Engineer).toEqual(true);
+        });
         it("should create an object with a name, id, email, and GitHub username if provided valid arguments", () => {
             const engineer = new Engineer("Jane", 1, "jane@email.com", "janecodes");
             expect(engineer.name).toEqual("Jane");
@@ -19,10 +23,14 @@ describe("Engineer", () => {
             const err = new Error("Expected parameter 'github' to be a non-empty string");
             expect(cb).toThrow(err);
         });
+    });
+    describe("getRole", () => {
         it("should return 'Engineer' when getRole() is called", () => {
             const engineer = new Engineer("Jane", 1, "jane@email.com", "janecodes");
             expect(engineer.getRole()).toEqual("Engineer");
         });
+    });
+    describe("getGithub", () => {
         it("should return the engineer's github username when getRole() is called", () => {
             const engineer = new Engineer("Jane", 1, "jane@email.com", "janecodes");
             expect(engineer.getGithub()).toEqual("janecodes");
