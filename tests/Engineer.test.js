@@ -1,4 +1,5 @@
 const Engineer = require("../lib/Engineer.js");
+const { isValidString, isValidNumber, isPossibleEmail } = require("../utils/functions.js");
 
 describe("Engineer", () => {
     describe("Initialization", () => {
@@ -15,14 +16,20 @@ describe("Engineer", () => {
         });
         it("should throw an error if not provided a github username", () => {
             const cb = () => new Engineer("Jane", 1, "jane@email.com");
-            const err = new Error("Expected parameter 'github' to be a non-empty string")
+            const err = new Error("Expected parameter 'github' to be valid github username")
             expect(cb).toThrowError(err);
         })
         it("should throw an error if 'github' is not a string", () => {
             const cb = () => new Engineer("Jane", 1, "jane@email.com", 4);
-            const err = new Error("Expected parameter 'github' to be a non-empty string");
+            const err = new Error("Expected parameter 'github' to be valid github username");
             expect(cb).toThrow(err);
         });
+        it("should throw an error if 'github' is not a valid github username", () => {
+            const cb = () => new Engineer("Jane", 1, "jane@email.com", 4);
+            const err = new Error("Expected parameter 'github' to be valid github username");
+            expect(cb).toThrow(err);
+        });
+        
     });
     describe("getRole", () => {
         it("should return 'Engineer' when getRole() is called", () => {

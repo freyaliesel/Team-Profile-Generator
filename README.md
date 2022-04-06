@@ -11,11 +11,12 @@ A command-line program that takes user input about a team via prompts, then dyna
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contact](#contact)
+- [Credits](#credits)
 - [License](#license)
 
 ## Installation
 
-Ensure that [Node Package Manager](https://www.npmjs.com/) is installed in your IDE. Open the terminal inside the folder containing the cloned code, and enter "npm i" on the command line.
+Ensure that [Node Package Manager](https://www.npmjs.com/) is installed in your IDE. Open the terminal inside the folder containing the cloned code, and enter `npm i` on the command line.
 
 ## Usage
 
@@ -23,14 +24,17 @@ link will be provided when complete
 
 ## Tests
 
-instruction will come when completed
-
-link will be provided when completed
+Tests are run by entering `npm test` in the console.
+Test files are located in the 'tests' folder.
 
 ## Contact
 
 Find more projects at [github.com/freyaliesel](https://github.com/freyaliesel)
 For questions, email [freyacodes@gmail.com](mailto:freyacodes@gmail.com)
+
+## Credits
+
+This application was built using Node.js and has `inquirer`, `jest`, and `github-username-regex` dependencies.
 
 ## License
 
