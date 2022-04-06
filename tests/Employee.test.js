@@ -47,7 +47,7 @@ describe("Employee", () => {
         });
         it("should throw an error if email is not an email address", () => {
             const cb = () => new Employee("Jane", 1, "janeatemail.com");
-            const cb2 = () => new Employee("Jane", 1, "jane@emailcom");
+            const cb2 = () => new Employee("Jane", 1, 4);
             const err = new Error(
                 "Expected parameter 'email' to be an email address"
             );
