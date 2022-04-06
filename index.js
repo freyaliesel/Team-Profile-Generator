@@ -6,7 +6,7 @@ const {
     isValidNumber,
     isPossibleEmail,
 } = require("./utils/functions.js");
-const generateTeamProfile = require("./utils/generateTeamProfile");
+const { generateTeamProfile } = require("./utils/generateTeamProfile");
 
 const team = [];
 
@@ -130,7 +130,7 @@ function makeTeam() {
         if (employee.addAnother) {
             makeTeam();
         } else {
-            console.log(team);
+            generateTeamProfile(team);
         }
     });
 }
