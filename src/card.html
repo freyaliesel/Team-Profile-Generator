@@ -1,0 +1,13 @@
+<div class="d-flex flex-row justify-content-evenly align-items-center">
+    <div class="card" style="width: 18rem">
+        <div class="card-header">
+            <h5 class="card-title">$employee.name}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">${renderIcon(employee.role} ${employee.role}</h6>
+        </div>
+        <ul class="list-group mx-3 my-4">
+            <li class="list-group-item">ID: ${employee.id}</li>
+            <li class="list-group-item">Email: <a href="mailto:${employee.email}">${employee.email}</a></li>
+            <li class="list-group-item">${renderInfo(employee)}</li>
+        </ul>
+    </div>
+</div>
