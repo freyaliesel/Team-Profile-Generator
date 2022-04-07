@@ -40,6 +40,7 @@ function generateTeamProfile(rawTeam) {
         }
     });
     console.log(team);
+    return JSON.stringify(team);
 }
 
 module.exports = { generateTeamProfile };

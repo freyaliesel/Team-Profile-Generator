@@ -130,8 +130,17 @@ function makeTeam() {
         if (employee.addAnother) {
             makeTeam();
         } else {
-            generateTeamProfile(team);
+            writeToFile(generateTeamProfile(team));
         }
+    });
+}
+
+function writeToFile(data) {
+    fs.writeFile("./dist/index.html", data, (err) => {
+        err ? console.error(err) : console.log("Generating webpage");
+    });
+    fs.copyFile("./src/template.css", "./dist/style.css", (err) => {
+        if (err) console.error(err);
     });
 }
 
