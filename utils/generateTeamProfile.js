@@ -74,7 +74,7 @@ function renderInfo(employee) {
             info = `GitHub: <a href="http://github.com/${employee.github}">${employee.github}</a>`
             break;
         case "Intern":
-            info = ``
+            info = `School: ${employee.school}`
             break;
     }
     return info;
