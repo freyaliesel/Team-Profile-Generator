@@ -48,7 +48,7 @@ function makeEmployeeObjects(rawTeam) {
     return team;
 }
 
-function createTeamCards(team) {
+function renderTeamCards(team) {
     let html = [];
     team.forEach((employee) => {
         html.push(renderCard(employee));
@@ -58,7 +58,7 @@ function createTeamCards(team) {
     return html.join("");
 }
 
-function renderCard(employee) {
+function createCard(employee) {
     // creates the html
 }
 
@@ -80,10 +80,4 @@ function renderInfo(employee) {
     return info;
 }
 
-module.exports = {
-    generateTeamProfile,
-    makeEmployeeObjects,
-    createTeamCards,
-    renderCard,
-    renderIcon,
-};
+module.exports = generateTeamProfile;
