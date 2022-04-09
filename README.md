@@ -1,6 +1,9 @@
 # Team Profile Generator
 
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
+![GitHub language count](https://img.shields.io/github/languages/count/freyaliesel/Team-Profile-Generator)
+![GitHub top language](https://img.shields.io/github/languages/top/freyaliesel/Team-Profile-Generator)
+![Passed tests: 42](https://img.shields.io/badge/passed%20tests-42-green)
 
 ## Description
 
