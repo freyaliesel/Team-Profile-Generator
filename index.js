@@ -6,7 +6,7 @@ const {
     isValidNumber,
     isPossibleEmail,
 } = require("./utils/functions.js");
-const { generateTeamProfile } = require("./utils/generateTeamProfile");
+const generateTeamProfile = require("./utils/generateTeamProfile");
 
 const team = [];
 

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/10b37400f6.js" crossorigin="anonymous"></script>
+    <link href="./style.css" rel="stylesheet" />
+    <title>My Team</title>
+</head>
+
+<body class="bg-gray-50">
+    <div>
+        <!-- Nav wrapper -->
+        <div>
+            <nav class="bg-violet-900 text-center text-gray-50 py-4">
+                <div>
+                    <h1 class="font-bold uppercase text-3xl">
+                        <i class="fa-solid fa-people-roof"></i> My Team
+                    </h1>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <main class="text-gray-700 ">
+        <div class="my-8 mx-4 flex flex-wrap justify-evenly">
+            <!-- cards go here -->
+            ${renderTeamCards(makeEmployeeObjects(data))}
+        </div>
+    </main>
+</body>
+
+</html>
