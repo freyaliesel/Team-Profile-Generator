@@ -1,7 +1,7 @@
 <div class="rounded overflow-hidden bg-gray-100 shadow-md w-80 m-1">
     <div class="bg-teal-800 py-4">
         <h2 class="text-white text-center font-bold">$employee.name}</h2>
-        <h4 class="text-gray-50 text-center font font-semibold">${renderIcon(employee.role} ${employee.role}</h4>
+        <h4 class="text-gray-50 text-center font font-semibold"><i class="fa-solid fa-${renderIcon(employee.getRole()}"></i> ${employee.getRole()}</h4>
     </div>
     <div> <!--body of card-->
         <ul class="bg-white mx-8 my-4">
