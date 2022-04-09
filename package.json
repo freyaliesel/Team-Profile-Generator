@@ -14,9 +14,9 @@
     "node.js",
     "javascript",
     "AGPLv3",
-    "bootstrap",
     "inquirer",
-    "jest"
+    "jest",
+    "tailwindcss"
   ],
   "author": "K Glidden",
   "license": "AGPL-3.0-or-later",
@@ -28,5 +28,8 @@
     "github-username-regex": "^1.0.0",
     "inquirer": "^8.2.2",
     "jest": "^27.5.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.0.23"
   }
 }

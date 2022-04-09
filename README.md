@@ -36,6 +36,8 @@ For questions, email [freyacodes@gmail.com](mailto:freyacodes@gmail.com)
 
 This application was built using Node.js and has `inquirer`, `jest`, and `github-username-regex` dependencies.
 
+CSS was generated with [tailwind CSS](https://tailwindcss.com/)
+
 ## License
 
 Copyright (C) 2022 K Glidden
