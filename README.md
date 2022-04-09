@@ -23,7 +23,10 @@ Ensure that [Node Package Manager](https://www.npmjs.com/) is installed in your 
 
 ## Usage
 
-link will be provided when complete
+On the command line in the root folder, enter `node index.js`
+The user will be prompted to answer questions about themselves, then given the option to add team members. Once finished adding individuals, the program will generate html and css files in the /dist folder. Link to video walkthrough of this application: 
+
+[![Preview of application in use](./assets/Team%20Profile%20Generator%20Preview.png)](https://youtu.be/Zce-VeruIAQ)
 
 ## Tests
 
