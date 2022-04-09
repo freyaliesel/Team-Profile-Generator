@@ -13,7 +13,7 @@
     <div>
         <!-- Nav wrapper -->
         <div>
-            <nav class="bg-violet-900 text-center text-purple-100 py-4">
+            <nav class="bg-violet-900 text-center text-gray-50 py-4">
                 <div>
                     <h1 class="font-bold uppercase text-3xl">
                         <i class="fa-solid fa-people-roof"></i> My Team
@@ -22,12 +22,10 @@
             </nav>
         </div>
     </div>
-
     <main class="text-gray-700 ">
         <div class="my-8 mx-4 flex flex-wrap justify-evenly">
             <!-- cards go here -->
-            ${renderTeamCards(team)}
-
+            ${renderTeamCards(makeEmployeeObjects(data))}
         </div>
     </main>
 </body>

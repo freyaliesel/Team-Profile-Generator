@@ -8,8 +8,8 @@ function makeEmployeeObjects(rawTeam) {
     const team = [];
     rawTeam.forEach((member) => {
         let teamMember;
-        console.log(member)
-        switch (member.getRole()) {
+        console.log(member);
+        switch (member.role) {
             case "Manager":
                 teamMember = new Manager(
                     member.name,
@@ -65,12 +65,12 @@ function createCard(employee) {
 function renderIcon(role) {
     switch (role) {
         case "Manager":
-            return "mug-hot";
+            return '<i class="fa-solid fa-mug-hot"></i>';
             break;
         case "Engineer":
-            return "glasses";
+            return '<i class="fa-solid fa-glasses"></i>';
         case "Intern":
-            return "seedling";
+            return '<i class="fa-solid fa-seedling"></i>';
             break;
         default:
             break;
@@ -80,7 +80,8 @@ function renderIcon(role) {
 // takes an employee role and returns the appropriate info as a string
 function renderInfo(employee) {
     let info = "";
-    switch (employee.getRole()) {
+    let role = employee.getRole();
+    switch (role) {
         case "Manager":
             info = `Office Number: ${employee.officeNumber}`;
             break;
@@ -97,7 +98,6 @@ function renderInfo(employee) {
 // takes in array of inquirer objects and returns a webpage as a string of html
 function generateTeamProfile(data) {
     console.log(data);
-    let team = makeEmployeeObjects(data)
     return eval("`" + fs.readFileSync("./src/template.html", "utf-8") + "`");
 }
 
