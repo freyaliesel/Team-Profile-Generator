@@ -15,7 +15,8 @@
     "javascript",
     "AGPLv3",
     "inquirer",
-    "jest"
+    "jest",
+    "tailwindcss"
   ],
   "author": "K Glidden",
   "license": "AGPL-3.0-or-later",
